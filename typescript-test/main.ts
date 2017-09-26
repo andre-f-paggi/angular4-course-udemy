@@ -1,9 +1,16 @@
-// functions
+// interfaces
 
-// normal functions
-let log = function(message){
-    console.log(message);
+// inlineAnotations
+let drawPoint1 = (point: {x, y}) =>{
+    // ...
 }
 
-// arrow fuctions
-let doLog = (message) => console.log(message);
+// interface
+let drawPoint2 = (point: Point) =>{
+    // ...
+}
+
+interface Point{
+    x: number,
+    y: number
+}
