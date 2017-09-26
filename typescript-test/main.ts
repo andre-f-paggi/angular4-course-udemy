@@ -1,16 +1,14 @@
-// interfaces
+// classes
 
-// inlineAnotations
-let drawPoint1 = (point: {x, y}) =>{
-    // ...
-}
+class Point{
+    x: number; // fields
+    y: number;
 
-// interface
-let drawPoint2 = (point: Point) =>{
-    // ...
-}
+    draw() {
+        console.log('X: ');
+    };
 
-interface Point{
-    x: number,
-    y: number
+    getDistance(another: Point) {
+        // ...
+    }
 }
