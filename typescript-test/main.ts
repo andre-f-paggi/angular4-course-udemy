@@ -1,10 +1,9 @@
-// type assetions
+// functions
 
-let message;
-message = 'abc';
+// normal functions
+let log = function(message){
+    console.log(message);
+}
 
-// 1 - Preferable way
-let endsWithC1 = (<string>message).endsWith('c');
-
-// 2 - Another way
-let endsWithC2 = (message as string).endsWith('c');
+// arrow fuctions
+let doLog = (message) => console.log(message);
