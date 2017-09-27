@@ -1,15 +1,21 @@
 export class LikeButton{
-    public liked: boolean;
-
-    constructor(private likes: number = 0){
+    constructor(private _likes: number = 0, private _liked: boolean = false){
 
     }
 
-    like(){
-        this.liked = !this.liked;
-        this.liked ? this.likes++ : this.likes--;
+    get likes(){
+        return this._likes;
+    }
+    
+    get liked(){
+        return this._liked;
+    }
 
-        console.log(`Number of likes: ${this.likes}`);
+    like(){
+        this._liked = !this._liked;
+        this._liked ? this._likes++ : this._likes--;
+
+        console.log(`Number of likes: ${this._likes}`);
         console.log(`Already liked? ${this.liked ? 'Yes' : 'No'}`);
     }
 }
