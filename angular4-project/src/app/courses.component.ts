@@ -14,5 +14,5 @@ import { Component } from '@angular/core';
 })
 export class CoursesComponent {
   title = 'List of courses';
-  courses = ['Course 1', 'Course 2', 'Course 3'];
+  courses = [];
 }
