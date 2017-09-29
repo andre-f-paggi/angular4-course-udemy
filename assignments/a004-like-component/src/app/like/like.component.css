@@ -1,0 +1,18 @@
+.container{
+  text-align: center;
+}
+
+span.heart {
+  display: block;
+  cursor: pointer;
+  color: #ccc;
+  font-size: 48px;
+}
+
+span.heart.isActive{
+  color: deeppink;
+}
+
+span.like-count{
+  font-size: 26px;
+}
