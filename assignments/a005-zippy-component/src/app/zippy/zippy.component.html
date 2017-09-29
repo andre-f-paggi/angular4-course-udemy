@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+  <div (click)="onClick()" class="panel-heading" [class.collapsed]="collapsed">
+    <h4>
+        {{ title }}
+        <span
+          class="pull-right glyphicon"
+          [ngClass]="{
+            'glyphicon-chevron-down': collapsed,
+            'glyphicon-chevron-up': !collapsed
+          }"
+        ></span>
+    </h4>
+  </div>
+  <div [class.collapsed]="collapsed" class="panel-body">
+    <ng-content></ng-content>
+  </div>
+</div>
